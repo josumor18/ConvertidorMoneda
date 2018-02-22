@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Convertidor de Moneda</string>
+    <string name="titColonesDolares">Colones a Dólares</string>
+    <string name="titDolaresColones">Dólares a Colones</string>
+    <string name="hint_txtMonto">Ingrese el monto</string>
+    <string name="txtVenta">Venta:</string>
+</resources>

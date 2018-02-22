@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="colones.dolares.convertidor.convertidormoneda.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_view_Resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtMonto"
+            android:layout_below="@+id/txtMonto"
+            android:layout_marginTop="55dp"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rgrp_Opcion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rdbtnCol_Dol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:textSize="18sp"
+                    tools:text="@string/titColonesDolares" />
+
+                <RadioButton
+                    android:id="@+id/rdbtnDol_Col"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:textSize="18sp"
+                    tools:text="@string/titDolaresColones" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtMonto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTipoCambio"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="178dp"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/hint_txtMonto"
+            android:inputType="numberDecimal"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtTipoCambio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtMonto"
+            android:layout_marginBottom="11dp"
+            android:layout_marginEnd="29dp"
+            android:text="@string/txtVenta" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
